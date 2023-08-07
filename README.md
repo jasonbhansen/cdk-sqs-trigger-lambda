@@ -1,0 +1,1 @@
+# cdk-sqs-trigger-lambda
