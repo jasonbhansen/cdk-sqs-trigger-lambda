@@ -20,4 +20,4 @@
 - `cdklocal deploy`
 ##### Potential Errors:
 - <span style="color:red">Unable to resolve AWS account to use. It must be either configured when you define your CDK Stack, or through the environment</span>.
-    - Remove everything from ~/.aws/credentials ~/.aws/config
+    - Remove everything from `~/.aws/credentials` and  `~/.aws/config`
