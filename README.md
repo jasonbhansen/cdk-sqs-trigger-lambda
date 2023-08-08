@@ -1,14 +1,21 @@
-# Welcome to your CDK TypeScript project
+# Requirements
+ - NodeJs
+ - docker
+ - cdklocal
+ - awslocal
+ - aws sam
+ - aws cli V2
 
-This is a blank project for CDK development with TypeScript.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+localstack start (-d to detach)
 
-## Useful commands
+cdklocal synth
+cdklocal bootstrap
+cdklocal deploy
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+Potential Errors: 
+ - Unable to resolve AWS account to use. It must be either configured when you define your CDK Stack, or through the environment
+  - Remove everything from ~/.aws/credentials ~/.aws/config
+
+
+
