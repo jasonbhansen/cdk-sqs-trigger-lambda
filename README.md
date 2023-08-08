@@ -1,21 +1,23 @@
-# Requirements
+
+# Trigger Lambda (TypeScript) via SQS using Localstack
+
+## Requirements
+
  - NodeJs
  - docker
  - cdklocal
  - awslocal
  - aws sam
  - aws cli V2
+## Useful commands
+### Start Localstack   
 
+     localstack start (-d to detach)
 
-localstack start (-d to detach)
-
-cdklocal synth
-cdklocal bootstrap
-cdklocal deploy
-
-Potential Errors: 
- - Unable to resolve AWS account to use. It must be either configured when you define your CDK Stack, or through the environment
-  - Remove everything from ~/.aws/credentials ~/.aws/config
-
-
-
+### Deploy CDK
+- `cdklocal synth`
+- `cdklocal bootstrap`
+- `cdklocal deploy`
+##### Potential Errors:
+- <span style="color:red">Unable to resolve AWS account to use. It must be either configured when you define your CDK Stack, or through the environment</span>.
+    - Remove everything from ~/.aws/credentials ~/.aws/config
